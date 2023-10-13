@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+header{
+    display: flex;
+    background-image: url(../images/HeaderBackground.png);
+    height: 400px;
+    background-repeat: no-repeat;
+}
+.divHeader{
+    display: flex;
+    flex-direction: column;
+    background-size:contain;
+    padding:20px;  
+}
+.divHeader > p{
+    text-align: justify;
+    color:white;
+}
+.divHeader>h1{
+    text-align: left;
+    font-family:luckiest guy;
+    width: 310px;
+    margin: auto;
+    color: white;
+}
+button{
+    display: block;
+    margin: auto;
+    width: 300px;
+    border-radius: 20px;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;   
+}
+#openDisc{
+    background-color: #23272A;
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: auto;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(8,1fr);
+}
+.container2{
+    background-color: #f6f6f6;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #23272A;
+}
+footer > img{
+    padding: 32px;
+}
+#topic4{
+    padding-top: 40px;
+}
+.container1{
+    margin: auto;
+}
+.container2{
+    margin: auto;
+}
+.container3{
+    margin: auto;
+}
+.container4{
+    display: flex;
+    flex-direction: column;
+}
+
+#ultImg{
+    margin: auto;
+}
+
+@media screen and (min-width:880px) {
+    main{
+        display: grid;
+        width: 800px;
+        margin: auto;
+        grid-template-columns:400px 300px;
+        grid-template-rows: repeat(3,320px) 400px;
+        grid-template-areas:"linhaUM paragrafoUM"
+                            "paragrafoDOIS linhaDOIS"
+                            "linhaTRES paragrafoTRES"
+                            "linhaQUATRO linhaQUATRO";
+    }
+    header{
+        display: flex;
+        background-image:url(../images/HeaderBackground.png);
+        height: 490px;    
+        background-size:cover;    
+    }  
+    .divHeader > h1{
+        text-align: center;
+        font-family: Luckiest Guy;
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 56px;
+        letter-spacing: 0em;
+        padding: 30px;
+    }
+    .divHeader > p{
+        text-align: justify;
+        color: white;
+        padding: 20px;
+    }
+    .divHeader{
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        margin: auto;
+    }
+    section{
+        padding: 20px;
+    }
+    button{
+        display: inline-block;
+        border-radius: 30px;
+        padding: 12px;
+        margin: 10px;   
+        border: none;
+    } 
+    .botao{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .container1{
+        grid-area: linhaUM;   
+        width: 800px;
+    }
+    .container2{
+        grid-area:linhaDOIS ;
+        width: 400px;
+    }
+    
+    .container3{
+        grid-area: linhaTRES;
+        width: 800px;
+    }
+    .container4{
+        grid-area: linhaQUATRO;
+        margin:auto;
+       
+        text-align: center;
+    }
+    .container1> h1, .container1 >  p {
+        width: 300px;
+    }
+   .paragrafoUM{
+        grid-area: paragrafoUM;
+        width: 360px;
+   }
+   .paragrafoDOIS{
+        grid-area: paragrafoDOIS;
+        width: 360px;
+   }
+   .paragrafoTRES{
+        grid-area: paragrafoTRES;
+        width: 360px;
+   }
+   #topic4{
+    width: auto;
+   }
+}
